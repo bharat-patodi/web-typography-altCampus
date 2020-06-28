@@ -13,14 +13,20 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0 auto;
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, .logo {
+  font-family: 'DM Serif Display', serif;
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 2.8em;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 2.0em;
 }
 
 h3 {
@@ -31,7 +37,138 @@ label, input {
   display: block;
 }
 
+.btn {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #6E6B74;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.padding-container {
+  padding: 30px 150px;
+}
+
+.col-1-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.width-100 {
+  width: 100%;
+}
+
 /* ---------------------------------------------------------------
-Project Specific Styles
+Header
 --------------------------------------------------------------- */
 
+header {
+  padding: 10px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #2D2640;
+  font-size: 1.6em;
+}
+
+header nav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+header nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header nav ul a {
+  color: #6E6B74;
+  margin-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+header ul a:hover {
+  color: #2D2640;
+}
+
+/* Why isn't this working? */
+/* header a:last-child {
+  margin-right: 0;
+} */
+
+/* ---------------------------------------------------------------
+Hero
+--------------------------------------------------------------- */
+
+.hero {
+  background-color: #2D2640;
+  color: white;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px solid white;
+  width: 30%;
+  margin-left: 0;
+}
+
+.hero a {
+  color: white;
+  border: 1px solid white;
+}
+
+.hero-text {
+  flex: 0 1 410px;
+}
+
+.hero-img {
+  flex: 0 1 410px;
+  position: relative;
+}
+
+.hero img {
+  position: absolute;
+}
+
+.hero-text > * {
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------------------
+Explainer
+--------------------------------------------------------------- */
+
+.explainer {
+  padding: 150px;
+}
+
+.explainer-text {
+  flex: 0 1 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.explainer-img {
+  flex: 0 1 410px;
+}
+
+.explainer-text > * {
+  margin-bottom: 30px;
+}
+
+.explainer a {
+  align-self: flex-start;
+  color: #6e6b74;
+  border: 1px solid #6e6b74;
+}
