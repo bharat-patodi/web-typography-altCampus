@@ -63,6 +63,22 @@ label, input {
   width: 100%;
 }
 
+.quarter-length-hr {
+  border: 0;
+  border-bottom: 2px solid white;
+  width: 10vw;
+  margin-left: 0;
+}
+
+.quarter-length-hr.black-hr {
+  border-bottom: 2px solid black;
+}
+
+.circular-image {
+  border-radius: 50%;
+}
+
+
 /* ---------------------------------------------------------------
 Header
 --------------------------------------------------------------- */
@@ -115,13 +131,6 @@ Hero
   color: white;
 }
 
-hr {
-  border: 0;
-  border-bottom: 2px solid white;
-  width: 30%;
-  margin-left: 0;
-}
-
 .hero a {
   color: white;
   border: 1px solid white;
@@ -171,4 +180,91 @@ Explainer
   align-self: flex-start;
   color: #6e6b74;
   border: 1px solid #6e6b74;
+}
+
+/* ---------------------------------------------------------------
+We Are Different
+--------------------------------------------------------------- */
+.we-are-diff > * {
+  margin-bottom: 30px;
+}
+
+.all-cards {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 30%;
+}
+
+/* ---------------------------------------------------------------
+How We Work
+--------------------------------------------------------------- */
+.how-we-work {
+  background-color: #2D2640;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.how-we-work h2 {
+  flex-basis: 30%;
+}
+
+.how-we-work div {
+  display: flex;
+  align-items: center;
+}
+
+.how-we-work a {
+  color: white;
+  border: 1px solid white;
+  display: inline-block;
+}
+
+.how-we-work > * {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* ---------------------------------------------------------------
+Footer
+--------------------------------------------------------------- */
+footer {
+  background-color: #fafafa;
+}
+
+footer hr {
+  border: 0;
+  border-bottom: 1px solid #95B0D7;
+}
+
+footer li {
+  text-transform: uppercase;
+  color: #95B0D7;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 2em;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.two-col-nav-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-col-nav-section img {
+  width: 1.4em;
+  margin-left: 10px;
+  /* Change the color to gray too */
+}
+
+.four-col-nav-section {
+  display: flex;
+  justify-content: space-between;
 }
